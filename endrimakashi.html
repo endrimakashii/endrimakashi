@@ -14,7 +14,7 @@
     <h1 class="text-2xl font-bold tracking-wide">Endri Makashi</h1>
     <nav class="space-x-6 text-sm">
       <a href="#about" class="hover:text-pink-400">Rreth Meje</a>
-      <a href="#projects" class="hover:text-pink-400">Projekte</a>
+      <a href="#projects" class="hover:text-pink-400">Angazhime Profesionale</a>
       <a href="#events" class="hover:text-pink-400">Angazhimet e Mia</a>
       <a href="#contact" class="hover:text-pink-400">Kontakt</a>
     </nav>
@@ -25,8 +25,8 @@
     <img src="endri_pfp.jpg" alt="Endri Makashi" class="w-40 h-40 rounded-full object-cover mb-6 border-4 border-pink-500 shadow-lg">
     <h2 class="text-4xl font-bold mb-2">Endri Makashi</h2>
     <p class="text-gray-300 max-w-md">
-    Student i informatikës ekonomike, anëtar i Këshillit Rinor të Bashkisë Gjirokastër dhe anëtar i Partisë Socialiste të Shqipërisë. Aktiv në politikë dhe zhvillim rinor.
-
+      Student i informatikës ekonomike, anëtar i Këshillit Rinor të Bashkisë Gjirokastër dhe anëtar i Partisë Socialiste të Shqipërisë. Aktiv në politikë dhe zhvillim rinor.
+    </p>
     <div class="mt-6 flex space-x-4">
       <a href="https://instagram.com/endrimakashii" target="_blank" class="flex items-center space-x-2 bg-pink-600 hover:bg-pink-700 px-5 py-2 rounded-full transition">
         <i class="fab fa-instagram"></i>
@@ -36,69 +36,75 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="py-20 px-8 bg-black bg-opacity-60 text-center">
-    <h3 class="text-3xl font-semibold mb-6 text-pink-400">Rreth Meje</h3>
-    <p class="max-w-3xl mx-auto text-gray-300 leading-relaxed">
-      Përshëndetje! Jam Endri Makashi, një i ri nga Gjirokastra me pasion për zhvillimin personal, politik dhe sipërmarrjen. 
-      Studioj Informatikë Ekonomike në Universitetin Luarasi dhe jam anëtar i Këshillit Vendor Rinor të Bashkisë Gjirokastër. Synoj të jap kontribut në politikë dhe të zhvilloj bizneset e mia, duke krijuar mundësi të reja për të rinjtë dhe duke promovuar inovacion, 
-      energji pozitive dhe një kulturë të re lidershipi në Shqipëri.
-    </p>
-  </section>
+  <!-- ACCORDION SEKSIONE -->
+  <div class="max-w-4xl mx-auto px-8 space-y-4 py-10">
 
-  <!-- PROJECTS -->
-  <section id="projects" class="py-20 px-8 text-center">
-    <h3 class="text-3xl font-semibold mb-10 text-pink-400">Projekte, Iniciativa & Angazhime të tjera</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="bg-gray-800 text-left border border-gray-700 p-6 rounded-xl">
-        <h4 class="text-xl font-semibold mb-2">ELA’S Coffee House</h4>
-        <p class="text-gray-400">Social & Google Maps Manager.</p>
+    <!-- Rreth Meje -->
+    <button class="w-full text-left px-4 py-3 bg-pink-600 hover:bg-pink-700 rounded-lg font-semibold" onclick="toggleSection('aboutContent')">
+      Rreth Meje
+    </button>
+    <div id="aboutContent" class="hidden p-6 bg-gray-800 rounded-lg text-gray-300">
+      Përshëndetje! Jam Endri Makashi, një i ri nga Gjirokastra me pasion për zhvillimin personal, politik dhe sipërmarrjen. Studioj Informatikë Ekonomike në Universitetin Luarasi dhe jam anëtar i Këshillit Vendor Rinor të Bashkisë Gjirokastër. Synoj të jap kontribut në politikë dhe të zhvilloj bizneset e mia, duke krijuar mundësi të reja për të rinjtë dhe duke promovuar inovacion, energji pozitive dhe një kulturë të re lidershipi në Shqipëri.
+    </div>
+
+    <!-- Angazhime Profesionale -->
+    <button class="w-full text-left px-4 py-3 bg-pink-600 hover:bg-pink-700 rounded-lg font-semibold" onclick="toggleSection('projectsContent')">
+      Angazhime Profesionale
+    </button>
+    <div id="projectsContent" class="hidden p-6 bg-gray-800 rounded-lg text-gray-300 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div>
+        <h4 class="text-lg font-semibold mb-1">ELA’S Coffee House</h4>
+        <p>Social & Google Maps Manager – administrim prezence online dhe promovim.</p>
       </div>
-      <div class="bg-gray-800 text-left border border-gray-700 p-6 rounded-xl">
-        <h4 class="text-xl font-semibold mb-2">REDCLOUD Albania & VIVERE TICKETING
-</h4>
-        <p class="text-gray-400">Përgjegjës dhe shitës biletash në koncerte të ndryshme.</p>
+      <div>
+        <h4 class="text-lg font-semibold mb-1">REDCLOUD Albania & VIVERE Ticketing</h4>
+        <p>Përgjegjës dhe shitës biletash në evente muzikore dhe kulturore.</p>
       </div>
-      <div class="bg-gray-800 text-left border border-gray-700 p-6 rounded-xl">
-        <h4 class="text-xl font-semibold mb-2">emstoreal</h4>
-        <p class="text-gray-400">Faqe online për</p>
+      <div>
+        <h4 class="text-lg font-semibold mb-1">emstoreal</h4>
+        <p>Faqe online për shitjen dhe sjelljen e makinave nga Evropa për klientët në Shqipëri.</p>
       </div>
     </div>
-  </section>
 
-  <!-- EVENTS -->
-  <section id="events" class="py-20 px-8 bg-black bg-opacity-70 text-center">
-    <h3 class="text-3xl font-semibold mb-10 text-pink-400">Angazhimet e Mia</h3>
-    <p class="max-w-2xl mx-auto text-gray-300">
-      <p>ELA’S Coffee House</p>
+    <!-- Angazhimet e Mia -->
+    <button class="w-full text-left px-4 py-3 bg-pink-600 hover:bg-pink-700 rounded-lg font-semibold" onclick="toggleSection('eventsContent')">
+      Angazhimet e Mia
+    </button>
+    <div id="eventsContent" class="hidden p-6 bg-gray-800 rounded-lg text-gray-300">
+      <h4 class="font-semibold mb-2">ELA’S Coffee House</h4>
+      <p>Social & Google Maps Manager – menaxhim prezence online dhe promovim.</p>
+      
+      <h4 class="font-semibold mt-4 mb-2">REDCLOUD Albania & VIVERE Ticketing</h4>
+      <p>Përgjegjës dhe shitës biletash në evente muzikore dhe kulturore, duke menaxhuar shitjen dhe fluksin e pjesëmarrësve.</p>
+    </div>
 
-<p>Social & Google Maps Manager
-Menaxhoj prezencën online, promovimin e lokalit dhe informacionet në Google Maps.
-Kujdesem që klientët të marrin përvojën më të mirë dhe informacion të saktë mbi shërbimet dhe produktet tona.
-</p>
-<p>REDCLOUD Albania & VIVERE Ticketing</p>
+    <!-- Kontakti -->
+    <button class="w-full text-left px-4 py-3 bg-pink-600 hover:bg-pink-700 rounded-lg font-semibold" onclick="toggleSection('contactContent')">
+      Kontakt
+    </button>
+    <div id="contactContent" class="hidden p-6 bg-gray-800 rounded-lg text-gray-300">
+      <p>📧 Email: <span class="text-white">makashiendri@gmail.com</span></p>
+      <p>📞 Tel: <span class="text-white">+355 69 335 3308</span></p>
+      <a href="https://instagram.com/endrimakashii" target="_blank" class="inline-flex items-center space-x-2 bg-pink-600 hover:bg-pink-700 px-5 py-2 rounded-full transition mt-2">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram @endrimakashii</span>
+      </a>
+    </div>
 
-<p>Përgjegjës dhe shitës biletash në koncerte
-Kam punuar në evente të ndryshme muzikore dhe kulturore, duke qenë përgjegjës për shitjen, kontrollin dhe menaxhimin e biletave.
-Kjo eksperiencë më ka ndihmuar të përmirësoj aftësitë në komunikim, menaxhim fluksi.</p>
-    </p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-20 px-8 text-center">
-    <h3 class="text-3xl font-semibold mb-6 text-pink-400">Kontakti</h3>
-    <p class="text-gray-300 mb-4">📧 Email: <span class="text-white">makashiendri@gmail.com</span></p>
-    <p class="text-gray-300 mb-6">📞 Tel: <span class="text-white">+355 69 335 3308</span></p>
-    <a href="https://instagram.com/endrimakashii" target="_blank" class="inline-flex items-center space-x-2 bg-pink-600 hover:bg-pink-700 px-5 py-2 rounded-full transition">
-      <i class="fab fa-instagram"></i>
-      <span>Instagram @endrimakashii</span>
-    </a>
-  </section>
+  </div>
 
   <!-- FOOTER -->
   <footer class="py-6 text-center text-gray-500 text-sm bg-black bg-opacity-80">
     © <script>document.write(new Date().getFullYear())</script> Endri Makashi. Të gjitha të drejtat e rezervuara.
   </footer>
+
+  <!-- SCRIPT JS -->
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('hidden');
+    }
+  </script>
 
 </body>
 </html>
